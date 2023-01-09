@@ -1,0 +1,30 @@
+<!--
+  @description       : 
+  @author            : ChangeMeIn@UserSettingsUnder.SFDoc
+  @group             : 
+  @last modified on  : 01-01-2023
+  @last modified by  : ChangeMeIn@UserSettingsUnder.SFDoc
+-->
+<template>
+
+        <div class="form-style-5">
+            <form action="https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8" method="POST"> <!-- Here your code form action -->
+                <fieldset>
+                    <legend><span class="text">Hi!</span> Guest Details</legend>
+                    <!-- Here the hidden Input -->
+                    <input type=hidden name="oid" value="00D5j000001uDUe">
+                    <input type=hidden name="retURL" value="https://pundareeka-dev-ed.my.site.com/portfolio/s/thanks"> 
+                    <!-- Input Type -->
+                    <label for="first_name">First Name</label><input  id="first_name" maxlength="40" name="first_name" size="20" type="text" /><br>
+                    <label for="last_name">Last Name</label><input  id="last_name" maxlength="80" name="last_name" size="20" type="text" /><br>
+                    <label for="email">Email</label><input  id="email" maxlength="80" name="email" size="20" type="text" /><br>
+                    <label for="company">Company</label><input  id="company" maxlength="120" name="company" size="20" type="text" placeholder="Mention your company Name"/><br>
+                    <label for="url">Website</label><input  id="url" maxlength="80" name="url" size="20" type="text" placeholder="Enter your online link"/><br>
+                    <label for="phone">Phone</label><input  id="phone" maxlength="40" name="phone" size="20" type="text" /><br>
+                    <label for="feedback">Feedback</label><input  id="feedback" maxlength="120" name="feedback" size="20" type="text" placeholder="Let me know what you think about my Portfolio!!"/><br>
+                    <input type="submit" name="submit">
+                </fieldset>
+            </form>
+        </div>
+     
+</template>
